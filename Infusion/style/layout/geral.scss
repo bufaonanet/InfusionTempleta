@@ -1,0 +1,64 @@
+/* Geral */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+.logo-text {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    background-color: $cor-padrao;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+
+    @media #{$mq-desktop} {
+        width: 25%;
+        box-sizing: border-box;
+    }
+}
+
+.button {
+    padding: 15px 40px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    margin-right: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .5s;
+
+    &:hover {
+        background-color: #929da5;
+    }
+
+}
+
+.button-primary {
+    background-color: $cor-padrao;
+    color: white;
+}
+
+.button-secundary {
+    background-color: #455357;
+    color: white;
+}

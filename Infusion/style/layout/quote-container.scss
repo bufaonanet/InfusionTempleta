@@ -1,0 +1,22 @@
+.quote-container {
+    background-color: $cor-padrao;
+    padding: 50px 0;
+    border-bottom: 12px solid #48b9a1;
+
+    h2 {
+        color: white;
+        font-size: 30px;
+        font-style: italic;
+        font-weight: normal;
+    }
+
+    figcaption {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.no-js .quote-slideshow figure+figure {
+    margin-top: 5em;
+}

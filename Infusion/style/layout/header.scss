@@ -1,0 +1,72 @@
+/* Header*/
+.header {
+    background-color: #fff;
+    width: 100%;
+
+    @media #{$mq-desktop} {
+        position: fixed;
+    }
+}
+
+.header__nav {
+    clear: left;
+
+    @media #{$mq-desktop} {
+        float: left;
+        clear: none;
+        width: 75%;
+        max-width: 800px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        @media #{$mq-desktop} {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    li {
+        list-style-type: none;
+        background-color: $cor-menu-fundo;
+        text-align: center;
+        border-bottom: rgb(255, 255, 255, 0.2);
+
+        @media #{$mq-desktop} {
+            border-bottom: none;
+            flex-grow: 1;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $cor-menu-fonte;
+        font-size: 14px;
+        font-weight: 600;
+        display: block;
+        padding: 20px 0;
+        transition: .5s;
+
+        &:hover {
+            color: $cor-menu-fonte-selecionado;
+        }
+
+        @media #{$mq-desktop} {
+            background-color: white;
+
+        }
+
+    }
+
+
+}
+
+.header__btnMenu {
+
+    @media #{$mq-desktop} {
+        display: none;
+    }
+}
