@@ -14,12 +14,12 @@
         width: 100%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 0;       
     }
 
     figure.show {
         opacity: 1;
-        position: static;       
+        position: static;
     }
 
     .next,
@@ -54,6 +54,7 @@
 
     figure {
         display: inline-block;
+        
     }
 
 }
