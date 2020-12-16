@@ -1,3 +1,47 @@
+.js .laptop-slider {
+    overflow: hidden;
+
+    .slideshow {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        max-width: 950px;
+    }
+
+    figure {
+        opacity: 0;
+        transition: 1s opacity;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    figure.show {
+        opacity: 1;
+        position: static;       
+    }
+
+    .next,
+    .prev {
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        color: white;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+
+}
+
 .laptop-slider {
     background-color: #242a2c;
     padding: 125px 0 100px;

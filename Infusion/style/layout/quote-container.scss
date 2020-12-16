@@ -17,6 +17,53 @@
     }
 }
 
+.js .quote-slideshow {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+
+    figure h2 {
+        margin-top: 0;
+    }
+
+    figure {
+        opacity: 0;
+        transition: 1s opacity;
+        position: absolute;
+        top: 0;
+        left: 50px;
+        right: 50px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    figure.show {
+        opacity: 1;
+        position: static;
+    }
+
+    .prev,
+    .next {
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+}
+
 .no-js .quote-slideshow figure+figure {
     margin-top: 5em;
 }

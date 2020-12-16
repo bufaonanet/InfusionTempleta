@@ -1,15 +1,21 @@
 /* Header*/
+.js .header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
 .header {
     background-color: #fff;
-    width: 100%;
+}
 
-    @media #{$mq-desktop} {
-        position: fixed;
-    }
+.js .header__nav {
+    transition: max-height .5s;
 }
 
 .header__nav {
     clear: left;
+    width: 100%;
 
     @media #{$mq-desktop} {
         float: left;
@@ -56,15 +62,16 @@
 
         @media #{$mq-desktop} {
             background-color: white;
-
         }
-
     }
-
-
 }
 
 .header__btnMenu {
+    float: right;
+    margin: 1.2em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
 
     @media #{$mq-desktop} {
         display: none;

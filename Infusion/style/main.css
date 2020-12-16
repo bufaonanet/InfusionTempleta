@@ -395,18 +395,23 @@ img {
 }
 
 /* Header*/
+.js .header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
 .header {
   background-color: #fff;
-  width: 100%;
 }
-@media screen and (min-width:1024px) {
-  .header {
-    position: fixed;
-  }
+
+.js .header__nav {
+  transition: max-height 0.5s;
 }
 
 .header__nav {
   clear: left;
+  width: 100%;
 }
 @media screen and (min-width:1024px) {
   .header__nav {
@@ -457,6 +462,13 @@ img {
   }
 }
 
+.header__btnMenu {
+  float: right;
+  margin: 1.2em;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+}
 @media screen and (min-width:1024px) {
   .header__btnMenu {
     display: none;
@@ -606,6 +618,42 @@ img {
   }
 }
 
+.js .laptop-slider {
+  overflow: hidden;
+}
+.js .laptop-slider .slideshow {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 950px;
+}
+.js .laptop-slider figure {
+  opacity: 0;
+  transition: 1s opacity;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.js .laptop-slider figure.show {
+  opacity: 1;
+  position: static;
+}
+.js .laptop-slider .next,
+.js .laptop-slider .prev {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: white;
+}
+.js .laptop-slider .prev {
+  left: 10px;
+}
+.js .laptop-slider .next {
+  right: 10px;
+}
+
 .laptop-slider {
   background-color: #242a2c;
   padding: 125px 0 100px;
@@ -635,6 +683,46 @@ img {
   color: white;
   font-size: 18px;
   text-align: center;
+}
+
+.js .quote-slideshow {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 950px;
+  box-sizing: border-box;
+  padding: 0 50px;
+  color: white;
+}
+.js .quote-slideshow figure h2 {
+  margin-top: 0;
+}
+.js .quote-slideshow figure {
+  opacity: 0;
+  transition: 1s opacity;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 50px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.js .quote-slideshow figure.show {
+  opacity: 1;
+  position: static;
+}
+.js .quote-slideshow .prev,
+.js .quote-slideshow .next {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.js .quote-slideshow .prev {
+  left: 10px;
+}
+.js .quote-slideshow .next {
+  right: 10px;
 }
 
 .no-js .quote-slideshow figure + figure {
